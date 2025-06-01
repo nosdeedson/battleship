@@ -1,0 +1,70 @@
+html body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#board {
+    position: relative;
+    /* full viewport width */
+    width: 98vw;
+    /* full viewport height */
+    height: 98vh;
+    margin: auto;
+    margin-top: 0;
+    background-image: url("images/board.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: solid;
+    border-color: red;
+}
+
+#message {
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    color: rgb(83, 175, 19);
+}
+
+table{
+    position: absolute;
+    left: 32%;
+    top: 11%;
+    border-spacing: 0;
+}
+
+td{
+    width: 60px;
+    height: 60px;
+    border: solid;
+    border-color: yellow;
+}
+
+form {
+    position: absolute;
+    bottom: 0.8%;
+    right: 0.8%;
+    background-color: rgb(83, 175, 19);
+}
+
+form input{
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 0.9em;
+}
+
+.hit{
+    background-image: url("images/ship.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+.miss{
+    background-image: url("images/miss.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
