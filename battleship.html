@@ -10,7 +10,7 @@
 
 <body>
     <div id="board">
-        <div id="message"></div>
+        <div id="message"> <h1 id="message"></h1></div>
         <table>
             <tr>
                 <td id="00"></td>
@@ -77,16 +77,13 @@
             </tr>
         </table>
         <form action="">
-            <input type="text" placeholder="A0" value="" id="guessInput">
-            <input type="button" value="Fire!" onclick="checkHit()">
+            <input autofocus type="text" placeholder="A0" min="1" max="2" value="" id="guessInput" oninput="checkHit(this.value)">
+            <!-- <input type="button" value="Fire!" onchange="checkHit()"> -->
         </form>
     </div>
     <!-- Load your JavaScript file -->
     <script src="battleship.js"></script>
     <script >
-        view.displayMiss('02');
-        view.displayHit('00')
-        view.displayMessage("teste");
     </script>
 </body>
 
