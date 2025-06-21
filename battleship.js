@@ -70,7 +70,7 @@ var controller = {
     },
 
     restartGame: function () {
-        let restart = confirm();
+        let restart = confirm('Restart the game?');
         if (restart) {
             window.location.reload()
         }
